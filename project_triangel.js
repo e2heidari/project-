@@ -1,11 +1,9 @@
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    let x = ""
-    for (let counter = 0; counter < 7; counter++) {
+    for (let line = "#"; line.length < 8; line += "#") {
 
-        x = x + "#"
-        ansewer = x + "\r\n"
+        document.getElementById("triangle").innerText = line;
     }
-    document.getElementById("triangle").innerText = ansewer;
+
 })
